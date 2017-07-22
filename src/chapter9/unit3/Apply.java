@@ -19,14 +19,14 @@ class Processor {
 class Upcase extends Processor {
     @Override
     public Object process(Object input) {
-        return ((String) input).toUpperCase();
+        return String.valueOf(input).toUpperCase();
     }
 }
 
 class Downcase extends Processor {
     @Override
     public Object process(Object input) {
-        return ((String) input).toLowerCase();
+        return String.valueOf(input).toLowerCase();
     }
 }
 
