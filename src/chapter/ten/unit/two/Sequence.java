@@ -1,8 +1,7 @@
 package chapter.ten.unit.two;
 
 /**
- * Created by IDEA.
- * User: e
+ * Author: vincent
  * Date: 2017/7/10
  * Comment: Thinking in Java 10.2.0 链接到外部类
  * 1. 内部类自动拥有对其外部类的所有成员的访问权

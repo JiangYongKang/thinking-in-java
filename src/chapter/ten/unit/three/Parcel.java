@@ -1,8 +1,7 @@
 package chapter.ten.unit.three;
 
 /**
- * Created by IDEA.
- * User: e
+ * Author: vincent
  * Date: 2017/7/10
  * Comment: Thinking in Java 10.3.2 使用 ".new"
  */

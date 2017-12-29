@@ -1,10 +1,9 @@
 package chapter.ten.unit.six;
 
 /**
- * Created by IDEA.
- * User: e
+ * Author: vincent
  * Date: 2017/7/10
- * Comment:
+ * Comment: Thinking in Java 10.6.1 工厂方法
  */
 public interface ServiceFactory {
     Service getService();

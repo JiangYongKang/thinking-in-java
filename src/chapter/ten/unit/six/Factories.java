@@ -1,8 +1,7 @@
 package chapter.ten.unit.six;
 
 /**
- * Created by IDEA.
- * User: e
+ * Author: vincent
  * Date: 2017/7/10
  * Comment: Thinking in Java 10.6.1 工厂方法
  */
@@ -12,21 +11,16 @@ class Implementation1 implements Service {
     }
 
     @Override
-    public void mothod1() {
-        System.out.println("Implementation1 -> mothod1()");
+    public void methodOne() {
+        System.out.println("Implementation1 -> methodOne()");
     }
 
     @Override
-    public void mothod2() {
-        System.out.println("Implementation1 -> mothod2()");
+    public void methodTwo() {
+        System.out.println("Implementation1 -> methodTwo()");
     }
 
-    public static ServiceFactory factory = new ServiceFactory() {
-        @Override
-        public Service getService() {
-            return new Implementation1();
-        }
-    };
+    public static ServiceFactory factory = Implementation1::new;
 }
 
 class Implementation2 implements Service {
@@ -35,29 +29,24 @@ class Implementation2 implements Service {
     }
 
     @Override
-    public void mothod1() {
-        System.out.println("Implementation2 -> mothod1()");
+    public void methodOne() {
+        System.out.println("Implementation2 -> methodOne()");
     }
 
     @Override
-    public void mothod2() {
-        System.out.println("Implementation2 -> mothod2()");
+    public void methodTwo() {
+        System.out.println("Implementation2 -> methodTwo()");
     }
 
-    public static ServiceFactory factory = new ServiceFactory() {
-        @Override
-        public Service getService() {
-            return new Implementation2();
-        }
-    };
+    public static ServiceFactory factory = Implementation2::new;
 }
 
 public class Factories {
 
     public static void serviceConsumer(ServiceFactory factory) {
         Service service = factory.getService();
-        service.mothod1();
-        service.mothod2();
+        service.methodOne();
+        service.methodTwo();
     }
 
     public static void main(String[] args) {

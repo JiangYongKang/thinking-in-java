@@ -1,8 +1,7 @@
 package chapter.ten.unit.two;
 
 /**
- * Created by IDEA.
- * User: e
+ * Author: vincent
  * Date: 2017/7/10
  * Comment:
  */
